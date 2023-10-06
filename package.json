@@ -16,11 +16,7 @@
     "react-dom": "18.2.0",
     "typescript": "5.1.6",
     "react-toastify": "^8.0.3",
-    "alchemy-sdk": "^2.6.2",
-    "@rainbow-me/rainbowkit": "^0.12.4",
-    "wagmi": "^0.12.6",
-    "daisyui": "^2.51.6",
-    "ethers": "^5.7.2"
+    "daisyui": "^2.51.6"
   },
   "devDependencies": {
     "@types/node": "20.4.9",
