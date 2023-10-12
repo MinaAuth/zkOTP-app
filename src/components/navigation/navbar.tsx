@@ -7,7 +7,6 @@ import React, { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { MdOutlineAccountBalanceWallet } from "react-icons/md";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 
 const style = {
@@ -91,7 +90,7 @@ export default function Navbar() {
 					<MdOutlineAccountBalanceWallet />
 				</div>
 				<div>
-					<ConnectButton></ConnectButton>
+					{/* <ConnectButton></ConnectButton> */}
 				</div>
 			</div>
 		</div>

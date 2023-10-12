@@ -6,7 +6,7 @@ export default function InstructionsComponent() {
 		<div className={styles.container}>
 			<header className={styles.header_container}>
 				<h1>
-					Create<span> Nextjs App Router based Web3 Frontend</span>
+					Create<span> Mina Frontend with Auro Wallet </span>
 				</h1>
 				<h3 className="text-[24px] p-4 mb-10 ">By <span>0xShikhar</span> </h3>
 
