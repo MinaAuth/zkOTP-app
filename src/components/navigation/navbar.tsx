@@ -24,6 +24,17 @@ const style = {
 export default function Navbar() {
 	const router = useRouter();
 	const [searchQuery, setSearchQuery] = useState("");
+	const [accounts, setAccounts] = useState(null);
+
+	const connectWallet = async () => {
+		try {
+			console.log("connectWallet called")
+			const collectAccounts = await window.mina.requestAccounts()
+			setAccounts(collectAccounts);
+		} catch (error) {
+			console.log(error.message, error.code)
+		}
+	}
 
 	return (
 		<div className={style.wrapper}>
@@ -90,7 +101,11 @@ export default function Navbar() {
 					<MdOutlineAccountBalanceWallet />
 				</div>
 				<div>
-					{/* <ConnectButton></ConnectButton> */}
+					<button onClick={() => { connectWallet(); }}
+						className="text-black px-6 py-2 bg-green-300 rounded-md"
+					>
+						{accounts ? accounts : <div>Connect Wallet</div>}
+					</button>
 				</div>
 			</div>
 		</div>
