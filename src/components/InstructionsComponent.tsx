@@ -1,5 +1,6 @@
+"use client"
 import styles from "../styles/InstructionsComponent.module.css";
-import Router, { useRouter } from "next/router";
+import Router, { useRouter } from "next/navigation";
 export default function InstructionsComponent() {
 	const router = useRouter();
 	return (

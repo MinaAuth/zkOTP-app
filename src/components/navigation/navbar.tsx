@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { MdOutlineAccountBalanceWallet } from "react-icons/md";
+import { shortThisText } from '../../utils/function'
 
 
 const style = {
@@ -29,9 +30,9 @@ export default function Navbar() {
 	const connectWallet = async () => {
 		try {
 			console.log("connectWallet called")
-			const collectAccounts = await window.mina.requestAccounts()
+			const collectAccounts = await (window as any).mina.requestAccounts()
 			setAccounts(collectAccounts);
-		} catch (error) {
+		} catch (error: any) {
 			console.log(error.message, error.code)
 		}
 	}
@@ -104,7 +105,7 @@ export default function Navbar() {
 					<button onClick={() => { connectWallet(); }}
 						className="text-black px-6 py-2 bg-green-300 rounded-md"
 					>
-						{accounts ? accounts : <div>Connect Wallet</div>}
+						{accounts ? (shortThisText(accounts[0])) : <div>Connect Wallet</div>}
 					</button>
 				</div>
 			</div>
