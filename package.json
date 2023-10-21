@@ -11,6 +11,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aurowallet/mina-provider": "^0.2.7",
+    "@polybase/auth": "^0.6.6",
+    "@polybase/client": "^0.6.6",
     "daisyui": "^2.51.6",
     "next": "13.4.13",
     "o1js": "^0.14.0",

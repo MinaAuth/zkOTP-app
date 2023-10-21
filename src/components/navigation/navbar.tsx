@@ -58,7 +58,7 @@ export default function Navbar() {
 				<input
 					className={style.searchInput}
 					type="text"
-					value={searchQuery}
+					defaultValue={searchQuery}
 					placeholder="Enter Text"
 				//  onKeyPress={(e) => {
 				// if (e.key === 'Enter')
