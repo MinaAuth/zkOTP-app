@@ -284,6 +284,11 @@
   resolved "https://registry.yarnpkg.com/@polybase/polylang/-/polylang-0.6.0.tgz#bd8dcb1b6275f9a3e4c9e208be2f7f18da07f955"
   integrity sha512-yk2JbnNkJDKs2Gnjedra7H1b8H7MCZKaOlo3n+OjjcTlqsZq8Iz472hE0umxDi74zxcsMnIb/qsR6oj6fGKrpw==
 
+"@polybase/react@^0.6.6":
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/@polybase/react/-/react-0.6.6.tgz#c91b6afbcd0618f55c8386544083ed1f40d476f4"
+  integrity sha512-b0x9DYT/JzivPNBs1H04TJ528fhPIkIXU9QV72tou7D8dQAK82aYcEuXoB/Nui44DRGYjx6Cfp26VUMGmKA68Q==
+
 "@polybase/util@^0.6.6":
   version "0.6.6"
   resolved "https://registry.yarnpkg.com/@polybase/util/-/util-0.6.6.tgz#b133c2406b0e017232a9e427d9a09318cf08860d"
@@ -1704,6 +1709,11 @@ jiti@^1.18.2:
   version "1.19.1"
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.19.1.tgz#fa99e4b76a23053e0e7cde098efe1704a14c16f1"
   integrity sha512-oVhqoRDaBXf7sjkll95LHVS6Myyyb1zaunVwk4Z0+WPSW4gjS0pl01zYKHScTuyEhQsFxV5L4DR5r+YqSyqyyg==
+
+jotai@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/jotai/-/jotai-2.5.1.tgz#eed05a32a4ac1264c531a77e86478f7ad3197ca3"
+  integrity sha512-vanPCCSuHczUXNbVh/iUunuMfrWRL4FdBtAbTRmrfqezJcKb8ybBTg8iivyYuUHapjcDETyJe1E4inlo26bVHA==
 
 js-sha256@^0.9.0:
   version "0.9.0"

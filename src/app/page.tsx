@@ -2,6 +2,8 @@
 import Image from 'next/image'
 import InstructionsComponent from '@/components/InstructionsComponent'
 import { useEffect } from 'react'
+import { PolybaseProvider } from '@polybase/react'
+import polybase from '@/config/polybase'
 
 export default function Home() {
 
@@ -27,8 +29,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div className='min-h-screen'>
-      <InstructionsComponent />
-    </div>
+    <PolybaseProvider polybase={polybase}>
+      <div className='min-h-screen'>
+        <InstructionsComponent />
+      </div>
+    </PolybaseProvider>
+
   )
 }

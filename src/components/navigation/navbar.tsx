@@ -8,7 +8,8 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { MdOutlineAccountBalanceWallet } from "react-icons/md";
 import { shortThisText } from '../../utils/function'
-
+import { atom, useAtom } from 'jotai'
+import { walletAddressAtom } from "@/utils/state";
 
 const style = {
 	wrapper: `bg-black w-screen px-[1.2rem] py-[0.8rem] flex `,
@@ -24,6 +25,8 @@ const style = {
 
 export default function Navbar() {
 	const router = useRouter();
+	const [walletAddress, setWalletAddress] = useAtom(walletAddressAtom)
+
 	const [searchQuery, setSearchQuery] = useState("");
 	const [accounts, setAccounts] = useState(null);
 
@@ -32,6 +35,7 @@ export default function Navbar() {
 			console.log("connectWallet called")
 			const collectAccounts = await (window as any).mina.requestAccounts()
 			setAccounts(collectAccounts);
+			setWalletAddress(collectAccounts[0])
 		} catch (error: any) {
 			console.log(error.message, error.code)
 		}
